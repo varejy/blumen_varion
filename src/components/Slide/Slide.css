@@ -1,0 +1,50 @@
+.sectionImage {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionSlide {
+  z-index: 20;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+  position: relative;
+  color: #212529;
+}
+
+.bg {
+  text-align: center;
+  background-size: cover !important;
+}
+
+.sectionTitle {
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 1.2;
+}
+
+.subTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.row {
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 1.2;
+}
+
+.text {
+  color: #777777;
+  margin-top: 3rem!important;
+}
+
+.textWrapp {
+  margin-bottom: 1.5rem!important;
+  padding-left: 0!important;
+  text-align: left;
+}

@@ -1,0 +1,51 @@
+﻿.carousel {
+    position: relative;
+    overflow: hidden;
+    /*display: flex;*/
+    justify-content: flex-start;
+}
+
+.sliderContainer {
+    touch-action: pan-y;
+}
+
+.sliderTrack {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    left: 0;
+    transition: all 1s ease 0s;
+}
+
+.slide {
+    min-height: 1px;
+    float: left;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    margin-right: 20px;
+    visibility: visible;
+    animation-name: upItems;
+}
+
+.imageWrapper {
+    width: 100%;
+    visibility: visible;
+    touch-action: pan-y;
+    overflow: hidden;
+}
+
+.image {
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    transform: scale(1);
+    transition-duration: 1s;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.image:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+}

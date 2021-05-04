@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="http://blumen.varion.net/wp-content/uploads/2020/11/Favicon.png">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=API_KEY" type="text/javascript"></script>
+    <title>My CMS</title>
+  </head>
+  <body>
+    <div ref="wrapp" id="app"></div>
+    <script type="text/javascript">
+
+      ymaps.ready(init); 
+      var myMap;
+      
+      function init() {
+      
+        myMap = new ymaps.Map("map", {
+          center: [51.3391324,6.5721523], // Координаты центра карты
+          zoom: 16.2 // Маштаб карты
+        }); 
+      
+        myMap.controls.add(
+          new ymaps.control.ZoomControl()  // Добавление элемента управления картой
+        );
+      
+        myPlacemark = new ymaps.Placemark([51.3391324,6.5721523], {}, {
+          preset: 'twirl#invertedRedClusterIcons' // Тип метки
+        });
+        
+        myMap.geoObjects.add(myPlacemark); // Добавление метки
+        
+      };
+      
+    </script>
+  </body>
+</html>
